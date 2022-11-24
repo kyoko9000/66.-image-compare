@@ -14,7 +14,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
-        canvas = QtGui.QPixmap(500, 400)
+        canvas = QtGui.QPixmap(550, 400)
         canvas.fill(QtGui.QColor('white'))
         self.uic.label.setPixmap(canvas)
         self.draw_something()
@@ -44,14 +44,14 @@ class MainWindow(QMainWindow):
         #         150 + randint(-100, 100)  # y
         #     )
         # 4. draw rectangle
-        painter.drawRect(50, 50, 100, 100)
-        painter.drawRect(100, 60, 150, 100)
+        # painter.drawRect(50, 50, 100, 100)
+        # painter.drawRect(100, 60, 150, 100)
         # 5. draw Rounded_rectangle
         # painter.drawRoundedRect(40, 40, 100, 100, 10, 10)
         # painter.drawRoundedRect(60, 60, 150, 200, 40, 40)
         # 6. draw Ellipse
-        # painter.drawEllipse(10, 10, 100, 100)
-        # painter.drawEllipse(40, 20, 100, 200)
+        painter.drawEllipse(10, 10, 100, 100)
+        painter.drawEllipse(40, 20, 100, 200)
         # 7. draw text
         # font = QtGui.QFont()
         # font.setFamily('Times')
